@@ -1,0 +1,115 @@
+<style type="text/css">
+  td 
+  {
+    text-align:center;
+    padding:10px;
+  }
+  th { text-align:center; padding:5px; }
+  table { border-collapse:collapse; }
+     
+</style>
+
+
+<table border="1">
+  <caption>Adult Role Model Nominations</caption>
+  <tr>
+    <th> Nomination </th>
+    <th> Question 1 </th>
+    <th> Question 2 </th>
+    <th> Submitter </th>
+    <th> Submitter Email </th>
+    <th> Submitter Phone </th>
+    <th> Submitter Address </th>
+  </tr>
+  {% for adult in adults %}
+  <tr>
+    <td>{{ adult.nominee }}</td>
+    <td>{{ adult.q1 }}</td>
+    <td>{{ adult.q2 }}</td>
+    <td>{{ adult.subFirst }} {{ adult.subLast }}</td>
+    <td>{{ adult.subEmail }}</td>
+    <td>{{ adult.subPhone }}</td>
+    <td>{{ adult.subAddress }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<br/>
+<hr/>
+<br/>
+<table border="1">
+  <caption>Business Nominations</caption>
+  <tr>
+    <th> Nomination </th>
+    <th> Question 1 </th>
+    <th> Question 2 </th>
+    <th> Submitter </th>
+    <th> Submitter Email </th>
+    <th> Submitter Phone </th>
+    <th> Submitter Address </th>
+  </tr>
+  {% for bus in business %}
+  <tr>
+    <td>{{ bus.nominee }}</td>
+    <td>{{ bus.q1 }}</td>
+    <td>{{ bus.q2 }}</td>
+    <td>{{ bus.subFirst }} {{ bus.subLast }}</td>
+    <td>{{ bus.subEmail }}</td>
+    <td>{{ bus.subPhone }}</td>
+    <td>{{ bus.subAddress }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<br/>
+<hr/>
+<br/>
+<table border="1">
+  <caption>Youth Service Organization Nominations</caption>
+  <tr>
+    <th> Nomination </th>
+    <th> Question 1 </th>
+    <th> Question 2 </th>
+    <th> Submitter </th>
+    <th> Submitter Email </th>
+    <th> Submitter Phone </th>
+    <th> Submitter Address </th>
+  </tr>
+  {% for y in youth %}
+  <tr>
+    <td>{{ y.nominee }}</td>
+    <td>{{ y.q1 }}</td>
+    <td>{{ y.q2 }}</td>
+    <td>{{ y.subFirst }} {{ y.subLast }}</td>
+    <td>{{ y.subEmail }}</td>
+    <td>{{ y.subPhone }}</td>
+    <td>{{ y.subAddress }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<br/>
+<hr/>
+<br/>
+<table border="1">
+  <caption>School Nominations</caption>
+  <tr>
+    <th> Nomination </th>
+    <th> Question 1 </th>
+    <th> Question 2 </th>
+    <th> Submitter </th>
+    <th> Submitter Email </th>
+    <th> Submitter Phone </th>
+    <th> Submitter Address </th>
+  </tr>
+  {% for s in schools %}
+  <tr>
+    <td>{{ s.nominee }}</td>
+    <td>{{ s.q1 }}</td>
+    <td>{{ s.q2 }}</td>
+    <td>{{ s.subFirst }} {{ s.subLast }}</td>
+    <td>{{ s.subEmail }}</td>
+    <td>{{ s.subPhone }}</td>
+    <td>{{ s.subAddress }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+

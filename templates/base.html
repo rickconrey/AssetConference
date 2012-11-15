@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.js"></script>
+    <script type="text/javascript">
+        //SubmittingForm=function() {
+        //}
+
+        $(document).ready(function() {
+            $("#nom").validate({
+                rules: {
+                    nominee: "required",
+                    q1: "required",
+                    q2: "required",
+                    first: "required",
+                    last: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    phone: "required",
+                    address: "required"
+                }
+            });
+        });
+    </script>
+    <title>
+      {% block title %} {% endblock %}
+    </title>
+  </head>
+  <body>
+    <div id="header">
+      <img class="left" src="/static/images/{% block img %}{% endblock %}"
+           width="150" height="150"/>
+      <div id="headline">
+        <h1> 
+          Asset Champion <br/>
+        </h1>
+        <h2>
+          {% block headline %} {% endblock %}<br/>
+          Nomination Form <br/><br/>
+        </h2>
+      </div>
+      <hr/>
+    </div>
+
+    <div id="wrap">
+      <div id="sidebar">
+        <h4>Nomination Forms:</h4>
+        <ul>
+            <li><a href="/adult">Adult Role Model</a></li>
+            <li><a href="/business">Business Role Model</a></li>
+            <li><a href="/school">School Role Model</a></li>
+            <li><a href="/youth">Youth Service Org. Role Model</a></li>
+        </ul>
+        <a href="/">Asset Conference</a><br/><br/>
+      </div>
+
+      <div id="main">
+        <div id="award">
+          <h4>
+            Awards given Saturday, March 16th, 2013<br/>
+            Community & Cultural Center During the Morgan Hill <br/>
+            Asset Builder Conference <br/>
+          </h4>
+        </div>
+
+        <div id="due">
+          {% block due %}{% endblock %} due by February 14th, 2013.
+        </div>
+
+        <div id="nomination">
+          <form id="nom" name="nomination" action="/{%block action %}{% endblock %}" method="post">
+            <b>* Nominee:</b> <input type="text" name="nominee"><br/>
+            <ol>
+              <li>
+                <b>* {% block q1 %}{% endblock %}<br/></b>
+                <textarea rows="5" cols="75" name="q1"></textarea><br/>
+              </li>
+              <li>
+                <b>* {% block q2 %}{% endblock %}<br/></b>
+                <textarea rows="5" cols="75" name="q2"></textarea><br/>
+              </li>
+            </ol>
+            <div id="submitter">
+              <b>Person submitting nomination:</b><br/>
+              * First Name: <br/> 
+              <input type="text" name="first"><br/>
+              * Last Name: <br/>
+              <input type="text" name="last"><br/>
+              * Email: <br/>
+              <input type="text" name="email"><br/>
+              * Phone: <br/>
+              <input type="text" name="phone"><br/>
+              * Address: <br/>
+              <input type="text" name="address"><br/>
+            </div>
+            <input id="submit" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+
+      <div id="footer">
+        <hr/>
+        Sponsored by:
+        <p align="center">
+        <img class="footer" src="/static/images/y.jpg" width="50" height="50"/>
+        <img class="footer" src="/static/images/discover.jpg" width="100" height="50"/>
+        <img class="footer" src="/static/images/mh.jpg" width="75" height="50"/>
+        <img class="footer" src="/static/images/mhusd.jpg" width="75" height="50"/>
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>
+
