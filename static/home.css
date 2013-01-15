@@ -45,9 +45,9 @@ div.box a:hover {text-decoration:underline;}
 
 #info {
     width: 700;
-    margin: 10px 0px;
+    margin: 5px 0px 20px 0px;
     padding: 10px;
-    background: #f1aeac;
+    background: #f7dcd2;
     float: left;
 }
 
@@ -60,7 +60,7 @@ th {
     text-align: left;
     padding-right: 20px;
 }
-p {
+p, h3#dev{
   padding-left: 10px;
 }
 #reg {
@@ -76,13 +76,12 @@ p {
     clear:both;
 }
 .pic {
-    width: 300px;
+    width: 289px;
     float: left;
 }
 
-h1{margin:10px 0 0 0;}
-h2{margin:10px 0 0 0;}
-h3{margin:10px 0 0 0;}
+h1,h2,h3{margin:10px 0 0 0;}
+
 div.last {
     margin-right: 0px;
 }
@@ -94,9 +93,10 @@ div.last {
 }
 
 #header {
-    width: 1199px;
+    width: 1197px;
     margin:0;
     background: #d0c57d;
+    border: 1px solid #802524;
 }
 
 #nav {
@@ -105,12 +105,15 @@ div.last {
 }
 
 #content {
-    width: 1199px;
+    width: 1197px;
     background: #dbd5af;
+    margin-top: 30px;
     padding: 10px 0px;
+    border: 1px solid #802524;
 }
 
 #footer {
     background: white;
+    padding-bottom: 70px;
 }
 
