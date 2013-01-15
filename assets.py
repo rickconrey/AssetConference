@@ -85,7 +85,11 @@ class NominationHandler(webapp2.RequestHandler):
 
         nom.put()
         
-        
+
+class HomePage(NominationHandler):
+    def get(self):
+        self.render('homepage.html')
+
 class MainPage(NominationHandler):
     def get(self):
         self.render('index.html')
@@ -156,7 +160,8 @@ class ResultsPage(NominationHandler):
                     youth=youth)
 
 
-app = webapp2.WSGIApplication([('/', MainPage),
+app = webapp2.WSGIApplication([('/', HomePage),
+                               ('/assets', MainPage),
                                ('/adult', AdultPage),
                                ('/business', BusinessPage),
                                ('/school', SchoolPage),
