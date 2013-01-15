@@ -1,0 +1,116 @@
+body,
+html {
+    font: trebuchet, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+a.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link {color:blue; text-decoration:none;}
+a:visited {color:blue; text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+.maroon {
+    color:#802524;
+}
+.tan {
+    color:#8c8348;
+}
+.box {
+    width: 155px;
+    padding: 5px;
+    background: #802524;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    float: left;
+}
+div.box a:link {color:white; text-decoration:none;}
+div.box a:visited {color:white; text-decoration:none;}
+div.box a:hover {text-decoration:underline;}
+
+
+#info {
+    width: 700;
+    margin: 10px 0px;
+    padding: 10px;
+    background: #f1aeac;
+    float: left;
+}
+
+#tab {
+    width: 560;
+    margin: 0px 20px 20px;
+    float: left;
+}
+th {
+    text-align: left;
+    padding-right: 20px;
+}
+p {
+  padding-left: 10px;
+}
+#reg {
+    padding: 20px 0px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear:both;
+}
+.pic {
+    width: 300px;
+    float: left;
+}
+
+h1{margin:10px 0 0 0;}
+h2{margin:10px 0 0 0;}
+h3{margin:10px 0 0 0;}
+div.last {
+    margin-right: 0px;
+}
+
+#container {
+    width: 1199px;
+    margin: auto;
+    background: white;
+}
+
+#header {
+    width: 1199px;
+    margin:0;
+    background: #d0c57d;
+}
+
+#nav {
+    width: 1199px;
+    background: white;
+}
+
+#content {
+    width: 1199px;
+    background: #dbd5af;
+    padding: 10px 0px;
+}
+
+#footer {
+    background: white;
+}
+
