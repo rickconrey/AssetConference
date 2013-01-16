@@ -47,8 +47,9 @@ div.box a:hover {text-decoration:underline;}
     width: 700;
     margin: 5px 0px 20px 0px;
     padding: 10px;
-    background: #f7dcd2;
+    background: #e5e2d1;
     float: left;
+    border: 5px double #802524;
 }
 
 #tab {
@@ -108,7 +109,7 @@ div.last {
     width: 1197px;
     background: #dbd5af;
     margin-top: 30px;
-    padding: 10px 0px;
+    padding: 20px 0px;
     border: 1px solid #802524;
 }
 
