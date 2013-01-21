@@ -6,7 +6,7 @@ html {
 }
 
 html {
-    padding: 50px;
+    padding: 30px;
 }
 
 .center {
@@ -77,7 +77,7 @@ p, h3#dev{
     clear:both;
 }
 .pic {
-    width: 289px;
+    width: 239px;
     float: left;
 }
 
